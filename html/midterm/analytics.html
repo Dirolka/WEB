@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ad Manager · Analytics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container inner">
+        <div class="brand">
+          <div class="logo">Ad</div>
+          <span>Ad Manager</span>
+        </div>
+        <nav class="nav">
+          <a href="index.html">Dashboard</a>
+          <a href="campaigns.html">Campaigns</a>
+          <a href="create.html">Create</a>
+          <a class="active" href="analytics.html">Analytics</a>
+          <a href="audiences.html">Audiences</a>
+          <a href="settings.html">Settings</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container grid">
+        <section class="card span-12">
+          <h2>Overview</h2>
+          <div class="actions" style="margin: 8px 0 14px">
+            <a class="btn" href="#">Last 7 days</a>
+            <a class="btn" href="#">Last 30 days</a>
+            <a class="btn" href="#">Custom…</a>
+          </div>
+          <div style="height: 220px; border: 1px dashed var(--border); border-radius: 12px; display: grid; place-items:center; color: var(--muted);">
+            Chart placeholder
+          </div>
+        </section>
+
+        <section class="card span-6">
+          <h2>Top Campaigns</h2>
+          <table class="table" style="margin-top:8px">
+            <thead>
+              <tr>
+                <th>Name</th><th>Spend</th><th>Conv.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Summer Launch</td><td>$1,240</td><td>142</td></tr>
+              <tr><td>Lookalike Test</td><td>$820</td><td>95</td></tr>
+              <tr><td>Retargeting</td><td>$560</td><td>61</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="card span-6">
+          <h2>Channels</h2>
+          <ul style="margin:8px 0 0 18px; color: var(--muted);">
+            <li>Search · 42%</li>
+            <li>Social · 33%</li>
+            <li>Display · 18%</li>
+            <li>Other · 7%</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container inner">
+        <span>© 2025 Ad Manager</span>
+        <a href="#">Privacy</a>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

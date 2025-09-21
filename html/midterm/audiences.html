@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ad Manager · Audiences</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container inner">
+        <div class="brand">
+          <div class="logo">Ad</div>
+          <span>Ad Manager</span>
+        </div>
+        <nav class="nav">
+          <a href="index.html">Dashboard</a>
+          <a href="campaigns.html">Campaigns</a>
+          <a href="create.html">Create</a>
+          <a href="analytics.html">Analytics</a>
+          <a class="active" href="audiences.html">Audiences</a>
+          <a href="settings.html">Settings</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container grid">
+        <section class="card span-12">
+          <h2>Audience Lists</h2>
+          <table class="table" style="margin-top:8px">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Size</th>
+                <th>Match</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>All Visitors (30d)</td>
+                <td>Behavioral</td>
+                <td>56,240</td>
+                <td>High</td>
+              </tr>
+              <tr>
+                <td>Cart Abandoners</td>
+                <td>Behavioral</td>
+                <td>8,320</td>
+                <td>Medium</td>
+              </tr>
+              <tr>
+                <td>Lookalike 1%</td>
+                <td>Lookalike</td>
+                <td>120,400</td>
+                <td>Medium</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container inner">
+        <span>© 2025 Ad Manager</span>
+        <a href="#">Privacy</a>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
