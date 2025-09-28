@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flexbox & Grid Tasks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Primary Navigation">
+      <div class="logo">★</div>
+      <ul class="nav-links">
+        <li><a href="#cards">Cards</a></li>
+        <li><a href="#grid-layout">Grid Layout</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="cards" class="section container">
+      <h2>Part 1 — Flexbox: Card Row</h2>
+      <div class="card-row">
+        <article class="card">
+          <img src="https://picsum.photos/seed/card1/600/400" alt="Random scenic 1" />
+          <div class="card-body">
+            <h3 class="card-title">Card One</h3>
+            <p class="card-text">blablabla</p>
+            <button class="btn">Learn More</button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://picsum.photos/seed/card2/600/400" alt="Random scenic 2" />
+          <div class="card-body">
+            <h3 class="card-title">Card Two</h3>
+            <p class="card-text">blablabla</p>
+            <button class="btn">Learn More</button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://picsum.photos/seed/card3/600/400" alt="Random scenic 3" />
+          <div class="card-body">
+            <h3 class="card-title">Card Three</h3>
+            <p class="card-text">blablabla</p>
+            <button class="btn">Learn More</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="grid-layout" class="section container">
+      <h2>Part 2 — Grid System: Page Layout with Grid Areas</h2>
+      <div class="grid-layout">
+        <header class="grid-header">Grid Header</header>
+        <aside class="grid-sidebar">Sidebar</aside>
+        <article class="grid-main">Main content</article>
+        <footer class="grid-footer">Grid Footer</footer>
+      </div>
+    </section>
+
+    <section id="gallery" class="section container">
+      <h2>Part 2 — Grid System: Image Gallery</h2>
+      <div class="gallery">
+        <figure class="gallery-item">
+          <img src="https://picsum.photos/seed/g1/600/600" alt="Gallery image 1" />
+          <figcaption>Caption 1</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="https://picsum.photos/seed/g2/600/600" alt="Gallery image 2" />
+          <figcaption>Caption 2</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="https://picsum.photos/seed/g3/600/600" alt="Gallery image 3" />
+          <figcaption>Caption 3</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="https://picsum.photos/seed/g4/600/600" alt="Gallery image 4" />
+          <figcaption>Caption 4</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="https://picsum.photos/seed/g5/600/600" alt="Gallery image 5" />
+          <figcaption>Caption 5</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="https://picsum.photos/seed/g6/600/600" alt="Gallery image 6" />
+          <figcaption>Caption 6</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="https://picsum.photos/seed/g7/600/600" alt="Gallery image 7" />
+          <figcaption>Caption 7</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="https://picsum.photos/seed/g8/600/600" alt="Gallery image 8" />
+          <figcaption>Caption 8</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="https://picsum.photos/seed/g9/600/600" alt="Gallery image 9" />
+          <figcaption>Caption 9</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section container">
+      <h2>Part 3 — Combining Flexbox & Grid: Portfolio Page</h2>
+      <header class="portfolio-header">
+        <div class="portfolio-logo">MyPortfolio</div>
+        <ul class="portfolio-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </header>
+      <div class="portfolio-main">
+        <section class="projects">
+          <article class="project-card">
+            <div class="project-media">
+              <img src="https://picsum.photos/seed/p1/800/500" alt="Project 1" />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Project One</h3>
+              <p class="project-desc">blablabla</p>
+              <button class="btn btn-small">View</button>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-media">
+              <img src="https://picsum.photos/seed/p2/800/500" alt="Project 2" />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Project Two</h3>
+              <p class="project-desc">blablabla</p>
+              <button class="btn btn-small">View</button>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-media">
+              <img src="https://picsum.photos/seed/p3/800/500" alt="Project 3" />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Project Three</h3>
+              <p class="project-desc">blablabla</p>
+              <button class="btn btn-small">View</button>
+            </div>
+          </article>
+        </section>
+
+        <aside class="portfolio-sidebar">
+          <div class="info-card">
+            <h3>About Me</h3>
+            <p>My name is Diyar(Dirol)</p>
+          </div>
+          <div class="info-card">
+            <h3>Contact</h3>
+            <p>Email: example@mail.com</p>
+          </div>
+        </aside>
+      </div>
+
+      <footer class="portfolio-footer">© 2025 Diyar — Dirol</footer>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">Flexbox & Grid </div>
+  </footer>
+</body>
+</html>
