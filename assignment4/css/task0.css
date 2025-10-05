@@ -1,0 +1,37 @@
+:root{
+  --font-base: 16px;
+  --font-scale: 1.125;
+}
+
+body{
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 1rem;
+  color: #222;
+}
+
+.container{ max-width: 900px; margin: 0 auto; }
+
+h1{ font-size: calc(var(--font-base) * 2); margin: 0.5rem 0; }
+h2{ font-size: calc(var(--font-base) * 1.5); }
+p{ font-size: var(--font-base); }
+.small-note{ color:#666; }
+
+@media (min-width: 576px){
+  :root{ --font-base: 17px; }
+  h1{ font-size: calc(var(--font-base) * 2.2); }
+}
+
+@media (min-width: 768px){
+  :root{ --font-base: 18px; }
+  h1{ font-size: calc(var(--font-base) * 2.4); }
+  h2{ font-size: calc(var(--font-base) * 1.6); }
+}
+
+@media (min-width: 992px){
+  :root{ --font-base: 19px; }
+  h1{ font-size: calc(var(--font-base) * 2.6); }
+  h2{ font-size: calc(var(--font-base) * 1.7); }
+  p{ font-size: calc(var(--font-base) * 1.05); }
+}
