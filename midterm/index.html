@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ad Manager · Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container inner">
+        <div class="brand">
+          <div class="logo">Ad</div>
+          <span>Ad Manager</span>
+        </div>
+        <nav class="nav">
+          <a class="active" href="index.html">Dashboard</a>
+          <a href="campaigns.html">Campaigns</a>
+          <a href="create.html">Create</a>
+          <a href="analytics.html">Analytics</a>
+          <a href="audiences.html">Audiences</a>
+          <a href="settings.html">Settings</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container grid">
+        <section class="card span-4">
+          <h2>Active Campaigns</h2>
+          <p>8 running · 2 paused</p>
+        </section>
+        <section class="card span-4">
+          <h2>Spend (30d)</h2>
+          <p>$12,340 · CPC $0.42</p>
+        </section>
+        <section class="card span-4">
+          <h2>Conversions</h2>
+          <p>1,284 · CR 4.7%</p>
+        </section>
+
+        <section class="card span-6">
+          <h2>Quick Actions</h2>
+          <div class="actions" style="margin-top:8px">
+            <a class="btn primary" href="create.html">New Campaign</a>
+            <a class="btn" href="campaigns.html">Manage Campaigns</a>
+            <a class="btn" href="analytics.html">View Analytics</a>
+          </div>
+        </section>
+
+        <section class="card span-6">
+          <h2>Recent Notifications</h2>
+          <ul style="margin:8px 0 0 0; padding:0 0 0 18px; color: var(--muted);">
+            <li>Budget increased for "Summer Launch"</li>
+            <li>Audience size updated (Remarketing · +3,200)</li>
+            <li>Creative approved for "Back to School"</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container inner">
+        <span>© 2025 Ad Manager</span>
+        <a href="#">Privacy</a>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ad Manager · Campaigns</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container inner">
+        <div class="brand">
+          <div class="logo">Ad</div>
+          <span>Ad Manager</span>
+        </div>
+        <nav class="nav">
+          <a href="index.html">Dashboard</a>
+          <a class="active" href="campaigns.html">Campaigns</a>
+          <a href="create.html">Create</a>
+          <a href="analytics.html">Analytics</a>
+          <a href="audiences.html">Audiences</a>
+          <a href="settings.html">Settings</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container grid">
+        <section class="card span-12">
+          <h2>All Campaigns</h2>
+          <table class="table" style="margin-top:8px">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Status</th>
+                <th>Budget</th>
+                <th>Spend</th>
+                <th>CTR</th>
+                <th>Conv.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Summer Launch</td>
+                <td><span class="badge success">Active</span></td>
+                <td>$5,000</td>
+                <td>$1,240</td>
+                <td>3.2%</td>
+                <td>142</td>
+              </tr>
+              <tr>
+                <td>Back to School</td>
+                <td><span class="badge warning">Paused</span></td>
+                <td>$3,000</td>
+                <td>$980</td>
+                <td>2.4%</td>
+                <td>65</td>
+              </tr>
+              <tr>
+                <td>Brand Awareness</td>
+                <td><span class="badge success">Active</span></td>
+                <td>$8,000</td>
+                <td>$3,410</td>
+                <td>1.1%</td>
+                <td>—</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="actions" style="margin-top:12px">
+            <a class="btn primary" href="create.html">New Campaign</a>
+            <a class="btn" href="analytics.html">Open Analytics</a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container inner">
+        <span>© 2025 Ad Manager</span>
+        <a href="#">Privacy</a>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
