@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Forms Assignment</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Forms Assignment</h1>
+      <nav>
+        <a href="#task0">Task 0</a>
+        <a href="#task1">Task 1</a>
+        <a href="#task2">Task 2</a>
+        <a href="#task3">Task 3</a>
+        <a href="#task4">Task 4</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="task0" class="card">
+      <h2>Task 0. Simple Contact Form</h2>
+      <p class="subtitle">Basic structure with labels and inputs. No validation attributes here.</p>
+      <form id="simple-contact-form">
+        <div class="mb-3">
+          <label for="t0-name" class="form-label">Name</label>
+          <input type="text" id="t0-name" name="name" class="form-control" />
+        </div>
+        <div class="mb-3">
+          <label for="t0-email" class="form-label">Email</label>
+          <input type="email" id="t0-email" name="email" class="form-control" />
+        </div>
+        <div class="mb-3">
+          <label for="t0-message" class="form-label">Message</label>
+          <textarea id="t0-message" name="message" class="form-textarea"></textarea>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </section>
+
+    <section id="task1" class="card">
+      <h2>Task 1. Form with HTML5 Validation</h2>
+      <p class="subtitle">Built-in attributes: required, type, minlength/maxlength. Let the browser enforce validation.</p>
+      <form id="native-validation-form">
+        <div class="mb-3">
+          <label for="t1-name" class="form-label">Name</label>
+          <input type="text" id="t1-name" name="name" class="form-control" placeholder="Your full name" required minlength="2" maxlength="50" />
+        </div>
+        <div class="mb-3">
+          <label for="t1-email" class="form-label">Email</label>
+          <input type="email" id="t1-email" name="email" class="form-control" placeholder="name@example.com" required maxlength="100" />
+          <div class="form-text">We’ll never share your email.</div>
+        </div>
+        <div class="mb-3">
+          <label for="t1-message" class="form-label">Message</label>
+          <textarea id="t1-message" name="message" class="form-textarea" placeholder="Write your message..." required minlength="10" maxlength="500"></textarea>
+          <div class="form-text">Min 10 characters, max 500.</div>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </section>
+
+    <section id="task2" class="card">
+      <h2>Task 2. Bootstrap Form Styling</h2>
+      <p class="subtitle">Recreated using custom Bootstrap-like classes and grid. With placeholders and helper text.</p>
+      <form id="bs-contact-form">
+        <div class="row">
+          <div class="col-6">
+            <div class="mb-3">
+              <label for="t2-name" class="form-label">Name</label>
+              <input type="text" id="t2-name" name="name" class="form-control" placeholder="Jane Doe" required minlength="2" maxlength="50" />
+              <div class="valid-feedback">Looks good!</div>
+              <div class="invalid-feedback">Name is required (2–50 chars).</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="mb-3">
+              <label for="t2-email" class="form-label">Email</label>
+              <input type="email" id="t2-email" name="email" class="form-control" placeholder="jane@example.com" required maxlength="100" />
+              <div class="form-text">We’ll never share your email.</div>
+              <div class="valid-feedback">Looks good!</div>
+              <div class="invalid-feedback">Valid email is required.</div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="t2-message" class="form-label">Message</label>
+          <textarea id="t2-message" name="message" class="form-textarea" placeholder="How can we help?" required minlength="10" maxlength="500"></textarea>
+          <div class="valid-feedback">Thanks for the details.</div>
+          <div class="invalid-feedback">Message must be 10–500 characters.</div>
+        </div>
+        <div class="d-flex gap-2">
+          <button type="submit" class="btn">Submit</button>
+          <button type="reset" class="btn btn-secondary">Reset</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="task3" class="card">
+      <h2>Task 3. Bootstrap Validation Styles</h2>
+      <p class="subtitle">Dynamic classes <code>is-valid</code>/<code>is-invalid</code> with feedback messages.</p>
+      <form id="bs-validation-demo">
+        <div class="mb-3">
+          <label for="t3-email" class="form-label">Email</label>
+          <input type="email" id="t3-email" class="form-control" placeholder="name@example.com" required />
+          <div class="valid-feedback">Email looks good!</div>
+          <div class="invalid-feedback">Please provide a valid email.</div>
+        </div>
+        <div class="mb-3">
+          <label for="t3-username" class="form-label">Username</label>
+          <input type="text" id="t3-username" class="form-control" placeholder="username" required minlength="3" maxlength="20" />
+          <div class="valid-feedback">Nice username.</div>
+          <div class="invalid-feedback">3–20 characters required.</div>
+        </div>
+        <button type="submit" class="btn">Test Validation</button>
+      </form>
+    </section>
+
+    <section id="task4" class="card">
+      <h2>Task 4. Registration Form</h2>
+      <p class="subtitle">Responsive with grid, HTML5 validation, and validation feedback.</p>
+      <form id="registration-form">
+        <div class="row">
+          <div class="col-6">
+            <div class="mb-3">
+              <label for="firstName" class="form-label">First Name</label>
+              <input type="text" id="firstName" name="firstName" class="form-control" placeholder="Jane" required minlength="2" maxlength="30" />
+              <div class="valid-feedback">Looks good.</div>
+              <div class="invalid-feedback">First name required (2–30).</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="mb-3">
+              <label for="lastName" class="form-label">Last Name</label>
+              <input type="text" id="lastName" name="lastName" class="form-control" placeholder="Doe" required minlength="2" maxlength="30" />
+              <div class="valid-feedback">Looks good.</div>
+              <div class="invalid-feedback">Last name required (2–30).</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+            <div class="mb-3">
+              <label for="regEmail" class="form-label">Email</label>
+              <input type="email" id="regEmail" name="email" class="form-control" placeholder="jane@example.com" required maxlength="100" />
+              <div class="valid-feedback">Email is valid.</div>
+              <div class="invalid-feedback">Valid email is required.</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="mb-3">
+              <label for="country" class="form-label">Country</label>
+              <select id="country" name="country" class="form-select" required>
+                <option value="" selected disabled>Select country</option>
+                <option>United States</option>
+                <option>United Kingdom</option>
+                <option>Canada</option>
+                <option>Germany</option>
+                <option>France</option>
+                <option>India</option>
+                <option>Japan</option>
+                <option>Australia</option>
+              </select>
+              <div class="valid-feedback">Looks good.</div>
+              <div class="invalid-feedback">Please select a country.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" id="password" name="password" class="form-control" placeholder="At least 8 characters" required minlength="8" />
+              <div class="form-text">Use 8+ chars with a mix of letters & numbers.</div>
+              <div class="valid-feedback">Strong enough.</div>
+              <div class="invalid-feedback">Password must be at least 8 characters.</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="mb-3">
+              <label for="confirmPassword" class="form-label">Confirm Password</label>
+              <input type="password" id="confirmPassword" name="confirmPassword" class="form-control" placeholder="Re-enter password" required minlength="8" />
+              <div class="valid-feedback">Passwords match.</div>
+              <div class="invalid-feedback">Passwords must match.</div>
+            </div>
+          </div>
+        </div>
+
+        <fieldset class="mb-3">
+          <legend>Gender</legend>
+          <div class="row">
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="genderFemale" value="female" required>
+                <label class="form-check-label" for="genderFemale">Female</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="genderMale" value="male" required>
+                <label class="form-check-label" for="genderMale">Male</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="genderOther" value="other" required>
+                <label class="form-check-label" for="genderOther">Other</label>
+              </div>
+              <div class="invalid-feedback">Please select a gender.</div>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="mb-3">
+          <legend>Hobbies</legend>
+          <div class="row">
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="hobbyReading" name="hobbies" value="reading">
+                <label class="form-check-label" for="hobbyReading">Reading</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="hobbySports" name="hobbies" value="sports">
+                <label class="form-check-label" for="hobbySports">Sports</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="hobbyMusic" name="hobbies" value="music">
+                <label class="form-check-label" for="hobbyMusic">Music</label>
+              </div>
+              <div class="form-text">Pick any that apply.</div>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="d-flex gap-2 mt-3">
+          <button type="submit" class="btn">Submit</button>
+          <button type="reset" class="btn btn-secondary">Reset</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  
+</body>
+</html>
